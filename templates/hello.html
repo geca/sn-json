@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SmartNinja basic Jinja template</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <h1>Seznam oseb</h1>
+    {% for o in osebe %}
+    <p>
+        E-mail: <b>{{ o.email }}</b><br>
+        Ime: <b>{{ o.first_name }}</b><br>
+    </p>
+    {% endfor %}
+</body>
+</html>
